@@ -1,0 +1,36 @@
+{
+    "burgers": [
+        {
+            "img": "img/Burgers/Burger1.png",
+            "name": "Чикенбургер",
+            "pieces": "6",
+            "gram": "350",
+            "price": "300",
+            "id": "0"
+        },
+        {
+            "img": "img/Burgers/Burger2.png",
+            "name": "Гамбургер",
+            "pieces": "10",
+            "gram": "230",
+            "price": "200",
+            "id": "1"
+        },
+        {
+            "img": "img/Burgers/Burger3.png",
+            "name": "Чикенбургер",
+            "pieces": "8",
+            "gram": "250",
+            "price": "230",
+            "id": "2"
+        },
+        {
+            "img": "img/Burgers/Burger4.png",
+            "name": "Дабл Бургер",
+            "pieces": "12",
+            "gram": "250",
+            "price": "220",
+            "id": "3"
+        }
+    ]
+}

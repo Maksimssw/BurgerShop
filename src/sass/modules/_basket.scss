@@ -1,0 +1,111 @@
+@import '../base/mixin';
+@import '../base/variable';
+
+.basket{
+    width: 400px;
+    background: $darkGrey;
+    border-radius: 20px;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 20px;
+    &__order{
+        @include font($white, 500, 24px, 30px);
+        margin-bottom: 15px;
+    }
+    &__empty{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        background: rgba( 256, 256, 256, 0.1);
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    &__list{
+        border-bottom: 1px solid rgba( 256, 256, 256, 0.1);
+        padding-bottom: 30px;
+    }
+    &__item{
+        border: 1px solid rgba( 256, 256, 256, 0.1);
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-around;
+        span{
+            @include font($grey, 500, 16px, 20px);
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__photo{
+        width: 100px;
+        height: 85px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__name{
+        @include font($white, 500, 24px, 30px);
+        margin-bottom: 10px;
+    }
+    &__specification{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    &__price{
+        @include font($white, 500, 24px, 30px);
+        margin-left: 10px;
+    }
+    &__result{
+        margin: 20px 0 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba( 256, 256, 256, 0.1);
+        &__price{
+            @include font($orange, 700, 26px, 36px);
+            margin-left: 10px;
+        }
+    }
+    &__arrange{
+        @include font($white, 700, 26px, 36px);
+        margin: 20px 0 30px;
+    }
+    form{
+        input{
+            width: 100%;
+            border: 1px solid rgba( 256, 256, 256, 0.4);
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            outline: none;
+            background: none;
+            @include font($white, 500, 20px, 36px);
+            &::placeholder{
+                color: $grey
+            }
+        }
+    }
+    &__button{
+        display: block;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 60px;
+        border: none;
+        outline: none;
+        width: 100%;
+        border: 1px solid $orange;
+        background: none;
+        @include font($orange, 500, 24px, 30px);
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover{
+            background: $orange;
+            color: $white;
+        }
+    }
+}

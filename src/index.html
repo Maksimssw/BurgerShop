@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs/animate.min.css">
+    <script src="js/libs/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <title>BurgerShop</title>
+</head>
+<body>
+    <header class="header wow animate__animated animate__fadeIn">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="img/Header/Logo.png" alt="logo">
+            </a>
+            <h1 class="header__title">Доставка бургеров</h1>
+            <h2 class="header__subtitle">Быстро и вкусно</h2>
+        </div>
+    </header>
+
+    <section class="burgers">
+        <div class="container">
+            <div class="burgers__wrapper">
+                <ul class="burgers__list">
+                    <!-- Список бургеров -->
+                </ul>
+                <article class="basket wow animate__animated animate__fadeIn">
+                    <h2 class="basket__order">Ваш заказ</h2>
+                    <div class="basket__empty">Корзина пуста</div>
+                    <ul class="basket__list">
+                        <!-- Корзина с товаром -->
+                    </ul>
+                    <h2 class="basket__result">Итог:
+                        <span class="basket__result__price">0₽</span>
+                    </h2>
+                    <form action="#">
+                        <h2 class="basket__arrange">Оформить заказ</h2>
+                        <input type="tel" placeholder="Ваш номер телефона" required>
+                        <button class="basket__button"> Зaказать</button>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </section>
+<script src="js/bundle.js"></script>
+</body>
+</html>
